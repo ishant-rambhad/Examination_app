@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Stack elements on small screens */
+  background-color: #E8DEE3;
+  padding: 20px;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .dashboard-container {
+    flex-direction: row; /* Sidebar and main content side-by-side on larger screens */
+  }
+}
+
+.sidebar {
+  width: 100%;
+  height: auto;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed; /* Fixed position for sidebar on larger screens */
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 270px;
+    margin-top: 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .search-bar input {
+    width: 250px;
+  }
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+}
+
+.info-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+  justify-content: space-around;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.info-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 150px;
+  margin: 10px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-container {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    min-width: 400px; /* Adjust width for larger screens */
+    flex: 1;
+  }
+}
+
+.welcome-banner {
+  text-align: center;
+  padding: 20px;
+  background-color: #1b6c7a;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Adjust font sizes on smaller screens */
+@media (max-width: 768px) {
+  .welcome-banner h2{
+    font-size: 1.8rem;
+  }
+
+  .info-card h3, .info-card p {
+    font-size: 1rem;
+  }
+
+  .notification-bell {
+    font-size: 1.5rem;
+  }
+
+  .notification .badge {
+    font-size: 0.5rem;
+    padding: 3px 6px;
+  }
+}

@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  height: 100vh; /* Make it full height */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Set width for sidebar */
+  background-color: #343a40; /* Dark background for sidebar */
+  color: white;
+  padding: 20px; /* Padding around sidebar content */
+}
+
+.sidebar nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0; /* Spacing between links */
+}
+
+.sidebar nav ul li a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.sidebar nav ul li .dropdown {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px; /* Font size for dropdown button */
+  padding: 10px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none; /* Ensure it's hidden by default */
+  position: absolute;
+  left: 0;
+  top: 30px; /* Position dropdown below button */
+  background-color: #495057; /* Dark background for dropdown */
+  width: 100%; /* Make dropdown the same width as button */
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 10px; /* Padding for dropdown items */
+  color: white; /* Ensure text is visible */
+  cursor: pointer; /* Pointer cursor for dropdown items */
+}
+
+.dropdown-content li:hover {
+  background-color: #6c757d; /* Change background on hover */
+}
+
+/* Toggle Visibility for Dropdown */
+.dropdown-content.show {
+  display: block; /* Show dropdown when active */
+}
+
+/* Content Area */
+.content {
+  flex-grow: 1; /* Make content fill remaining space */
+  padding: 20px; /* Padding around content */
+  background-color: #f8f9fa; /* Light background for content */
+}
+
+h1 {
+  color: #343a40; /* Dark color for headings */
+}
+
+/* Add Employee Button and Form */
+.add-employee-container {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start; /* Align items to the left */
+ margin-bottom: 20px;
+}
+.toggle-btn {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.toggle-btn:hover {
+  background-color: #218838;
+}
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex; /* Use flex to center the content */
+}
+
+/* Modal Content (the form) */
+.modal-content {
+  background-color: white;
+  margin: auto; /* Centered horizontally */
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px; /* Set form width */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Close Button */
+.close-btn {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Form Styling */
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000; /* Ensure it is on top of other elements */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+  padding: 8px; /* Reduced padding for a smaller appearance */
+  font-size: 14px; /* Reduced font size */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Ensure the overlay appears behind the form but above everything else */
+}
+
+/* Employee List */
+.employee-list-container {
+  margin-top: 20px;
+}
+.upload-message {
+ color: red;
+ font-size: 12px;
+ margin-top: 5px;
+}
+
+.file-input {
+ margin-bottom: 15px;
+}
+.employee-list {
+text-align: center;
+}
+
+.employee-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.employee-card {
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+width: 250px;
+text-align: center;
+}
+
+.employee-image {
+border-radius: 50%;
+width: 100px;
+height: 100px;
+object-fit: cover;
+margin-bottom: 15px;
+}
+
+.employee-details h3 {
+margin: 10px 0;
+font-size: 1.5em;
+}
+
+.employee-details p {
+color: #777;
+font-size: 1.2em;
+}
+
+
+
+
+
+
+/* Basic card container styling */
+.employee-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+/* Individual employee card */
+.employee-card {
+background-color: #f1f1f1;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+width: 250px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* For hover animation */
+opacity: 0;
+transform: scale(0.9); /* Start slightly smaller */
+animation: fadeInScale 0.6s forwards ease-in-out;
+}
+
+/* Fade in and scale animation */
+@keyframes fadeInScale {
+0% {
+ opacity: 0;
+ transform: scale(0.9); /* Smaller at start */
+}
+100% {
+ opacity: 1;
+ transform: scale(1); /* Grow to full size */
+}
+}
+
+/* Employee image styling */
+.employee-image {
+border-radius: 50%;
+width: 100px;
+height: 100px;
+object-fit: cover;
+margin-bottom: 15px;
+}
+
+/* Employee details styling */
+.employee-details h3 {
+margin: 10px 0;
+font-size: 1.5em;
+color: black;
+
+}
+
+.employee-details p {
+color: #777;
+font-size: 1.2em;
+}
+
+/* Hover animation for the card */
+.employee-card:hover {
+transform: scale(1.05); /* Slightly larger on hover */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}

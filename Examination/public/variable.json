@@ -1,0 +1,1403 @@
+[
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 1,
+    "question": "What will be the output of the following code?",
+    "programme": "python\na = 12\nb = 15\na = b\nprint(a)\n",
+    "options": [
+      "12",
+      "15",
+      "Error",
+      "None"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 2,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nprint('hello', 'world')\n",
+    "options": [
+      "hello world",
+      "hello, world",
+      "hello\nworld",
+      "Error"
+    ],
+    "answer": "hello world"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 3,
+    "question": "How to print 'hello' and 'world' in one line using two print statements?",
+    "programme": "None",
+    "options": [
+      "print('hello')\nprint('world')",
+      "print('hello', end=' ')\nprint('world')",
+      "print('hello')\nprint(' world')",
+      "print('hello', 'world')"
+    ],
+    "answer": "print('hello', end=' ')\nprint('world')"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 4,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nprint('hello', end='')\nprint('world')\n",
+    "options": [
+      "helloworld",
+      "hello world",
+      "hello\nworld",
+      "Error"
+    ],
+    "answer": "helloworld"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 5,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = 10\nprint(x + y)\n",
+    "options": [
+      "15",
+      "510",
+      "5 10",
+      "Error"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 6,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = '10'\nprint(x + int(y))\n",
+    "options": [
+      "15",
+      "510",
+      "Error",
+      "TypeError"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 7,
+    "question": "Which of the following is not a valid data type in Python?",
+    "programme": "None",
+    "options": [
+      "int",
+      "float",
+      "real",
+      "complex"
+    ],
+    "answer": "real"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 8,
+    "question": "What is the type of the following variable?\n\npython\nx = 3.14\n",
+    "programme": "None",
+    "options": [
+      "int",
+      "float",
+      "str",
+      "complex"
+    ],
+    "answer": "float"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 9,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 10\ny = 3\nprint(x // y)\n",
+    "options": [
+      "3",
+      "3.33",
+      "3.0",
+      "Error"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 10,
+    "question": "Which function is used to find the type of a variable in Python?",
+    "programme": "None",
+    "options": [
+      "type()",
+      "id()",
+      "var()",
+      "typeof()"
+    ],
+    "answer": "type()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 11,
+    "question": "What does the following code output?\n\npython\nx = 10\nprint(type(x))\n",
+    "programme": "None",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'list'>"
+    ],
+    "answer": "<class 'int'>"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 12,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7.5\nprint(int(x))\n",
+    "options": [
+      "7",
+      "7.5",
+      "Error",
+      "None"
+    ],
+    "answer": "7"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 13,
+    "question": "What is the id function used for in Python?",
+    "programme": "None",
+    "options": [
+      "To get the unique identifier for an object",
+      "To get the type of an object",
+      "To convert data types",
+      "None of the above"
+    ],
+    "answer": "To get the unique identifier for an object"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 14,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = '10'\ny = 5\nz = int(x) + y\nprint(z)\n",
+    "options": [
+      "15",
+      "105",
+      "Error",
+      "None"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 15,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 10.5\nprint(int(x))\n",
+    "options": [
+      "10",
+      "10.5",
+      "Error",
+      "None"
+    ],
+    "answer": "10"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 16,
+    "question": "Which of the following is a valid variable name?",
+    "programme": "None",
+    "options": [
+      "1variable",
+      "_variable",
+      "variable-1",
+      "variable 1"
+    ],
+    "answer": "_variable"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 17,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3.14\ny = int(x)\nprint(y)\n",
+    "options": [
+      "3",
+      "3.14",
+      "4",
+      "Error"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 18,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 'Python'\nprint(len(x))\n",
+    "options": [
+      "6",
+      "5",
+      "Error",
+      "None"
+    ],
+    "answer": "6"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 19,
+    "question": "Which of the following is not a valid Python data type?",
+    "programme": "None",
+    "options": [
+      "int",
+      "str",
+      "real",
+      "complex"
+    ],
+    "answer": "real"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 20,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nz = x ** y\nprint(z)\n",
+    "options": [
+      "6",
+      "5",
+      "9",
+      "Error"
+    ],
+    "answer": "9"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 21,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = '123'\ny = int(x)\nprint(type(y))\n",
+    "options": [
+      "<class 'int'>",
+      "<class 'str'>",
+      "<class 'float'>",
+      "Error"
+    ],
+    "answer": "<class 'int'>"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 22,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 5\ny = 2\nprint(x % y)\n",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "Error"
+    ],
+    "answer": "1"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 23,
+    "question": "Which of the following is an immutable data type in Python?",
+    "programme": "None",
+    "options": [
+      "list",
+      "str",
+      "set",
+      "dict"
+    ],
+    "answer": "str"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 24,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 7\ny = 2\nz = x // y\nprint(z)\n",
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "Error"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 25,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nprint(x ** y)\n",
+    "options": [
+      "9",
+      "5",
+      "1",
+      "Error"
+    ],
+    "answer": "9"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 26,
+    "question": "Which of the following is an invalid variable name?",
+    "programme": "None",
+    "options": [
+      "variable_1",
+      "1_variable",
+      "_variable",
+      "variableName"
+    ],
+    "answer": "1_variable"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 27,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 'Hello'\ny = 'World'\nprint(x + ' ' + y)\n",
+    "options": [
+      "Hello World",
+      "HelloWorld",
+      "Error",
+      "None"
+    ],
+    "answer": "Hello World"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 28,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 2\ny = 5\nprint(x * y)\n",
+    "options": [
+      "10",
+      "25",
+      "Error",
+      "None"
+    ],
+    "answer": "10"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 29,
+    "question": "Which function is used to convert a value to an integer in Python?",
+    "programme": "None",
+    "options": [
+      "int()",
+      "float()",
+      "str()",
+      "char()"
+    ],
+    "answer": "int()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 30,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7.5\ny = 2\nprint(x // y)\n",
+    "options": [
+      "3.0",
+      "3.5",
+      "4",
+      "Error"
+    ],
+    "answer": "3.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 31,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 4\ny = 3\nz = x / y\nprint(z)\n",
+    "options": [
+      "1.3333333333333333",
+      "1",
+      "1.5",
+      "Error"
+    ],
+    "answer": "1.3333333333333333"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 32,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '5'\ny = 6\nz = int(x) + y\nprint(z)\n",
+    "options": [
+      "11",
+      "56",
+      "Error",
+      "None"
+    ],
+    "answer": "11"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 33,
+    "question": "Which function is used to find the length of a string in Python?",
+    "programme": "None",
+    "options": [
+      "len()",
+      "length()",
+      "strlen()",
+      "size()"
+    ],
+    "answer": "len()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 34,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '10'\ny = 3\nprint(x * y)\n",
+    "options": [
+      "101010",
+      "30",
+      "Error",
+      "None"
+    ],
+    "answer": "101010"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 35,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = 10\nx, y = y, x\nprint(x, y)\n",
+    "options": [
+      "10 5",
+      "5 10",
+      "Error",
+      "None"
+    ],
+    "answer": "10 5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 36,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.14\ny = 2\nprint(x * y)\n",
+    "options": [
+      "6.28",
+      "6",
+      "5",
+      "Error"
+    ],
+    "answer": "6.28"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 37,
+    "question": "What is the result of the following code?",
+    "programme": "python\nx = 10\nprint(type(x))\n",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'list'>"
+    ],
+    "answer": "<class 'int'>"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 38,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3\ny = 4\nprint(x * y)\n",
+    "options": [
+      "12",
+      "7",
+      "34",
+      "Error"
+    ],
+    "answer": "12"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 39,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.5\ny = 2\nprint(x + y)\n",
+    "options": [
+      "5.5",
+      "5",
+      "3.7",
+      "Error"
+    ],
+    "answer": "5.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 40,
+    "question": "Which of the following data types is used to store text in Python?",
+    "programme": "None",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "answer": "str"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 41,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = 5\nz = x + y\nprint(z)\n",
+    "options": [
+      "8",
+      "35",
+      "Error",
+      "None"
+    ],
+    "answer": "8"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 42,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '3'\ny = 4\nprint(int(x) * y)\n",
+    "options": [
+      "12",
+      "34",
+      "Error",
+      "None"
+    ],
+    "answer": "12"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 43,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = '5'\nz = x - int(y)\nprint(z)\n",
+    "options": [
+      "5",
+      "105",
+      "Error",
+      "None"
+    ],
+    "answer": "5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 44,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5.5\ny = 2\nprint(x // y)\n",
+    "options": [
+      "2.0",
+      "2",
+      "3",
+      "Error"
+    ],
+    "answer": "2.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 45,
+    "question": "Which function is used to convert a string to a floating point number in Python?",
+    "programme": "None",
+    "options": [
+      "float()",
+      "int()",
+      "str()",
+      "convert()"
+    ],
+    "answer": "float()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 46,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7.5\ny = 2\nprint(int(x // y))\n",
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "Error"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 47,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = 3\nz = x % y\nprint(z)\n",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "Error"
+    ],
+    "answer": "1"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 48,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = 2\nz = x // y\nprint(z)\n",
+    "options": [
+      "2",
+      "2.5",
+      "Error",
+      "None"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 49,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = '5'\nz = x + int(y)\nprint(z)\n",
+    "options": [
+      "15",
+      "105",
+      "Error",
+      "None"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 50,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.14\nprint(int(x))\n",
+    "options": [
+      "3",
+      "3.14",
+      "Error",
+      "None"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 51,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = 2\nprint(x // y)\n",
+    "options": [
+      "5",
+      "5.0",
+      "Error",
+      "None"
+    ],
+    "answer": "5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 52,
+    "question": "Which function is used to find the type of an object in Python?",
+    "programme": "None",
+    "options": [
+      "type()",
+      "id()",
+      "obj_type()",
+      "object()"
+    ],
+    "answer": "type()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 53,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 4\ny = 3\nz = x % y\nprint(z)\n",
+    "options": [
+      "1",
+      "0",
+      "4",
+      "Error"
+    ],
+    "answer": "1"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 54,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 2\ny = 8\nprint(x ** y)\n",
+    "options": [
+      "256",
+      "64",
+      "16",
+      "Error"
+    ],
+    "answer": "256"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 55,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nz = x / y\nprint(z)\n",
+    "options": [
+      "1.5",
+      "1",
+      "2",
+      "Error"
+    ],
+    "answer": "1.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 56,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = '4'\ny = 6\nprint(int(x) + y)\n",
+    "options": [
+      "10",
+      "46",
+      "Error",
+      "None"
+    ],
+    "answer": "10"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 57,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 10\ny = 4\nprint(x % y)\n",
+    "options": [
+      "2",
+      "0",
+      "4",
+      "Error"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 58,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = '10'\nz = x + int(y)\nprint(z)\n",
+    "options": [
+      "15",
+      "510",
+      "Error",
+      "None"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 59,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nz = x * y\nprint(z)\n",
+    "options": [
+      "6",
+      "5",
+      "32",
+      "Error"
+    ],
+    "answer": "6"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 60,
+    "question": "Which function is used to get the unique identifier for an object in Python?",
+    "programme": "None",
+    "options": [
+      "id()",
+      "type()",
+      "hash()",
+      "uuid()"
+    ],
+    "answer": "id()"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 61,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7\ny = 2\nprint(x / y)\n",
+    "options": [
+      "3.5",
+      "3",
+      "7.0",
+      "Error"
+    ],
+    "answer": "3.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 62,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = 3\nz = x // y\nprint(z)\n",
+    "options": [
+      "3",
+      "3.0",
+      "Error",
+      "None"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 63,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.5\ny = 2\nprint(int(x) * y)\n",
+    "options": [
+      "6",
+      "7",
+      "7.0",
+      "Error"
+    ],
+    "answer": "6"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 64,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = '3.5'\ny = 2\nprint(float(x) * y)\n",
+    "options": [
+      "7.0",
+      "6",
+      "7",
+      "Error"
+    ],
+    "answer": "7.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 65,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 8\ny = 3\nprint(x % y)\n",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "Error"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 66,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = '3'\nz = x * int(y)\nprint(z)\n",
+    "options": [
+      "15",
+      "53",
+      "Error",
+      "None"
+    ],
+    "answer": "15"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 67,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 10\ny = 4\nprint(x // y)\n",
+    "options": [
+      "2",
+      "2.5",
+      "3",
+      "Error"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 68,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 4\ny = 2\nprint(x / y)\n",
+    "options": [
+      "2.0",
+      "2",
+      "Error",
+      "None"
+    ],
+    "answer": "2.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 69,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.14\ny = int(x)\nprint(y)\n",
+    "options": [
+      "3",
+      "3.14",
+      "4",
+      "Error"
+    ],
+    "answer": "3"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 70,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nz = x - y\nprint(z)\n",
+    "options": [
+      "1",
+      "5",
+      "Error",
+      "None"
+    ],
+    "answer": "1"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 71,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 2\ny = 5\nz = x + y\nprint(z)\n",
+    "options": [
+      "7",
+      "25",
+      "Error",
+      "None"
+    ],
+    "answer": "7"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 72,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '6'\ny = 2\nprint(int(x) * y)\n",
+    "options": [
+      "12",
+      "62",
+      "Error",
+      "None"
+    ],
+    "answer": "12"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 73,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = '3'\nz = x * int(y)\nprint(z)\n",
+    "options": [
+      "9",
+      "33",
+      "Error",
+      "None"
+    ],
+    "answer": "9"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 74,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10\ny = '2'\nz = x // int(y)\nprint(z)\n",
+    "options": [
+      "5",
+      "102",
+      "Error",
+      "None"
+    ],
+    "answer": "5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 75,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5.5\ny = 2\nprint(int(x // y))\n",
+    "options": [
+      "2",
+      "2.5",
+      "3",
+      "Error"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 76,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 6\ny = 4\nz = x % y\nprint(z)\n",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "Error"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 77,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 2\ny = 5\nprint(x ** y)\n",
+    "options": [
+      "32",
+      "10",
+      "25",
+      "Error"
+    ],
+    "answer": "32"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 78,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 4.5\ny = 2\nprint(x // y)\n",
+    "options": [
+      "2.0",
+      "2",
+      "2.25",
+      "Error"
+    ],
+    "answer": "2.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 79,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3\ny = 2\nprint(x / y)\n",
+    "options": [
+      "1.5",
+      "2",
+      "3",
+      "Error"
+    ],
+    "answer": "1.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 80,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 1.5\ny = 2\nprint(x + y)\n",
+    "options": [
+      "3.5",
+      "1",
+      "2.5",
+      "Error"
+    ],
+    "answer": "3.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 81,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 5\ny = '2'\nprint(x + int(y))\n",
+    "options": [
+      "7",
+      "52",
+      "Error",
+      "None"
+    ],
+    "answer": "7"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 82,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 3.6\ny = 2\nprint(x // y)\n",
+    "options": [
+      "1.0",
+      "1",
+      "1.8",
+      "Error"
+    ],
+    "answer": "1.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 83,
+    "question": "What is the result of the following code?",
+    "programme": "python\nx = 5\ny = 7\nz = x - y\nprint(z)\n",
+    "options": [
+      "-2",
+      "12",
+      "7",
+      "Error"
+    ],
+    "answer": "-2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 84,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 4.2\ny = 3\nprint(x + y)\n",
+    "options": [
+      "7.2",
+      "12.6",
+      "Error",
+      "None"
+    ],
+    "answer": "7.2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 85,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '5'\ny = 2\nprint(int(x) * y)\n",
+    "options": [
+      "10",
+      "52",
+      "Error",
+      "None"
+    ],
+    "answer": "10"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 86,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 8.0\ny = 3\nprint(int(x) % y)\n",
+    "options": [
+      "2",
+      "1",
+      "Error",
+      "None"
+    ],
+    "answer": "2"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 87,
+    "question": "What is the result of the following code?",
+    "programme": "python\nx = 5\nprint(type(x))\n",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'list'>"
+    ],
+    "answer": "<class 'int'>"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 88,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 9\ny = '3'\nprint(x / int(y))\n",
+    "options": [
+      "3.0",
+      "27",
+      "6",
+      "Error"
+    ],
+    "answer": "3.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 89,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 2.5\ny = 2\nprint(int(x + y))\n",
+    "options": [
+      "4",
+      "5",
+      "2",
+      "Error"
+    ],
+    "answer": "4"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 90,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7\ny = 3\nprint(x ** y)\n",
+    "options": [
+      "343",
+      "21",
+      "10",
+      "Error"
+    ],
+    "answer": "343"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 91,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = '7.5'\ny = 3\nprint(float(x) // y)\n",
+    "options": [
+      "2.0",
+      "2",
+      "3.0",
+      "Error"
+    ],
+    "answer": "2.0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 92,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 8\ny = 4\nprint(x % y)\n",
+    "options": [
+      "0",
+      "4",
+      "2",
+      "Error"
+    ],
+    "answer": "0"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 93,
+    "question": "What is the result of the following code?",
+    "programme": "python\nx = 5.5\ny = 2\nprint(x % y)\n",
+    "options": [
+      "1.5",
+      "2.5",
+      "2",
+      "Error"
+    ],
+    "answer": "1.5"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 94,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 7\ny = '5'\nprint(x + int(y))\n",
+    "options": [
+      "12",
+      "75",
+      "Error",
+      "None"
+    ],
+    "answer": "12"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 95,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 3.9\ny = 1\nprint(x * y)\n",
+    "options": [
+      "3.9",
+      "1",
+      "4.9",
+      "Error"
+    ],
+    "answer": "3.9"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 96,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 5\ny = 6\nprint(x ** y)\n",
+    "options": [
+      "15625",
+      "11",
+      "30",
+      "Error"
+    ],
+    "answer": "15625"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 97,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 9\ny = 2\nprint(x // y)\n",
+    "options": [
+      "4",
+      "4.5",
+      "5",
+      "Error"
+    ],
+    "answer": "4"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 98,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 4.9\ny = 1\nprint(x % y)\n",
+    "options": [
+      "0.9",
+      "1",
+      "4",
+      "Error"
+    ],
+    "answer": "0.9"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 99,
+    "question": "What is the output of the following code?",
+    "programme": "python\nx = 5\nprint(type(float(x)))\n",
+    "options": [
+      "<class 'float'>",
+      "<class 'int'>",
+      "<class 'str'>",
+      "<class 'bool'>"
+    ],
+    "answer": "<class 'float'>"
+  },
+  {
+    "topic_id": 2,
+    "subject_id": 1001,
+    "question_id": 100,
+    "question": "What will be the output of the following code?",
+    "programme": "python\nx = 10.5\ny = 3\nprint(int(x // y))\n",
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "Error"
+    ],
+    "answer": "3"
+  }
+]
+
