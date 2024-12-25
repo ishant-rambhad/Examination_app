@@ -1,0 +1,53 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+!.next/cache/build-manifest.json
+!.next/cache/next-server.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# dotenv environment variables file
+.env
+.env.local
+.env.*.local
+
+# Build output
+build/
+dist/
+
+# Static files
+/public/static/
+
+# Test files
+coverage/
+*.lcov
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+
+# IDE
+.idea/
+*.sublime-workspace
+*.sublime-project
