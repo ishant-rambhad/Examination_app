@@ -1,28 +1,32 @@
 'use client'
-import { useState } from 'react'
+import { useState } from 'react';
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
-  })
+  });
+
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/students/Login/', {
-        method: 'POST',
+      const response = await axios.post('http://127.0.0.1:8000/api/students/login/', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
       });
-  
-      const result = await response.json();
-      if (response.ok) {
-        console.log('Login successful:', result);
+
+      const result = response.data;
+      if (result.status === 'success') {
+        const { full_name } = result.data;
         alert('Login successful!');
+        // Redirect to dynamic route
+        router.push(`/Students/${encodeURIComponent(full_name)}`);
       } else {
         alert(`Error: ${result.message}`);
       }
@@ -31,14 +35,13 @@ export default function Login() {
       alert('Something went wrong. Please try again.');
     }
   };
-  
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
-    })
-  }
+    });
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center ">
@@ -55,7 +58,7 @@ export default function Login() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
               required
             />
           </div>
@@ -69,7 +72,7 @@ export default function Login() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
               required
             />
           </div>
@@ -85,5 +88,5 @@ export default function Login() {
         </form>
       </div>
     </div>
-  )
+  );
 }

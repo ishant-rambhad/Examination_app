@@ -2,7 +2,13 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import check_password
 import json
+from django.contrib.auth.hashers import make_password
 from .models import StudentDetails
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 @csrf_exempt
 def login(request):
@@ -31,89 +37,8 @@ def login(request):
 
     return JsonResponse({'status': 'error', 'message': 'Method not allowed'}, status=405)
 
-# from django.http import JsonResponse
-# from django.views.decorators.csrf import csrf_exempt
-# from django.contrib.auth.hashers import make_password
-# import json
-# from .models import StudentDetails
-
-# @csrf_exempt
-# def registration(request):
-#     if request.method == 'POST':
-#         try:
-#             data = json.loads(request.body)
-#             full_name = data.get('full_name')
-#             email = data.get('email')
-#             password = data.get('password')
-#             date_of_birth = data.get('date_of_birth')
-#             identity_proof_type = data.get('identity_proof_type')
-#             identity_proof_number = data.get('identity_proof_number')
-#             course = data.get('course')
-#             mobile_number = data.get('mobile_number')
-
-#             # Check if email already exists
-#             if StudentDetails.objects.filter(email=email).exists():
-#                 return JsonResponse({'status': 'error', 'message': 'Email already registered'}, status=400)
-
-#             # Create and save the student
-#             student = StudentDetails(
-#                 full_name=full_name,
-#                 email=email,
-#                 password=make_password(password),  # Hash the password before saving
-#                 date_of_birth=date_of_birth,
-#                 identity_proof_type=identity_proof_type,
-#                 identity_proof_number=identity_proof_number,
-#                 course=course,
-#                 mobile_number=mobile_number
-#             )
-#             student.save()
-
-#             return JsonResponse({'status': 'success', 'message': 'Registration successful'})
-
-#         except Exception as e:
-#             return JsonResponse({'status': 'error', 'message': str(e)}, status=400)
-
-#     return JsonResponse({'status': 'error', 'message': 'Method not allowed'}, status=405)
 
 
-# from django.http import JsonResponse
-# from django.views.decorators.csrf import csrf_exempt
-# from django.contrib.auth.hashers import make_password
-# import json
-# from .models import StudentDetails
-
-# @csrf_exempt
-# def registration(request):
-#     if request.method == 'POST':
-#         try:
-#             data = json.loads(request.body)
-#             student = StudentDetails(
-#                 full_name=data.get('fullName'),
-#                 email=data.get('email'),
-#                 password=make_password(data.get('password')),
-#                 date_of_birth=data.get('dateOfBirth'),
-#                 identity_proof_type=data.get('identityProofType'),
-#                 identity_proof_number=data.get('identityProofNumber'),
-#                 course=data.get('course'),
-#                 mobile_number=data.get('mobileNumber')
-#             )
-#             student.save()
-#             return JsonResponse({'status': 'success', 'message': 'Registration successful'})
-#         except Exception as e:
-#             return JsonResponse({'status': 'error', 'message': str(e)}, status=400)
-#     return JsonResponse({'status': 'error', 'message': 'Invalid request'}, status=405)
-
-
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from django.contrib.auth.hashers import make_password
-import json
-from .models import StudentDetails
-import logging
-
-# Configure logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
 
 @csrf_exempt
 def registration(request):
@@ -128,17 +53,7 @@ def registration(request):
             # Log the parsed data
             logger.debug(f"Received data: {data}")
 
-            # Create a new student record
-            # student = StudentDetails(
-            #     full_name=data.get('fullName'),
-            #     email=data.get('email'),
-            #     password=make_password(data.get('password')),
-            #     date_of_birth=data.get('dateOfBirth'),
-            #     identity_proof_type=data.get('identityProofType'),
-            #     identity_proof_number=data.get('identityProofNumber'),
-            #     course=data.get('course'),
-            #     mobile_number=data.get('mobileNumber')
-            # )
+          # Create a new StudentDetails object and save it to the database
             student = StudentDetails(
                 full_name=data.get('full_name'),
                 email=data.get('email'),
