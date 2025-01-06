@@ -77,7 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Backend.wsgi.application'
 
-# Database configuration for MongoDB
+# Database configuration for Postgresql
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',

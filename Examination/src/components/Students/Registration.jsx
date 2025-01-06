@@ -23,32 +23,6 @@ const StudentRegistration = () => {
     }));
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (formData.password !== formData.confirmPassword) {
-  //     alert('Passwords do not match!');
-  //     return;
-  //   }
-
-  //   try {
-  //     const response = await axios.post('http://127.0.0.1:8000/api/students/registration/', formData, {
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //     });
-
-  //     if (response.status === 200) {
-  //       alert('Registration successful!');
-  //     } else {
-  //       alert(`Error: ${response.data.message || 'An error occurred'}`);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error registering:', error);
-  //     alert('Something went wrong. Please try again.');
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -58,20 +32,6 @@ const StudentRegistration = () => {
     }
 
     try {
-      // const response = await axios.post('http://127.0.0.1:8000/api/students/registration/', {
-      //   full_name: formData.fullName,
-      //   email: formData.email,
-      //   password: formData.password,
-      //   date_of_birth: formData.dateOfBirth,
-      //   identity_proof_type: formData.identityProofType,
-      //   identity_proof_number: formData.identityProofNumber,
-      //   course: formData.course,
-      //   mobile_number: formData.mobileNumber
-      // }, {
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      // });
       const response = await axios.post('http://127.0.0.1:8000/api/students/registration/', {
         full_name: formData.fullName,
         email: formData.email,
@@ -86,12 +46,13 @@ const StudentRegistration = () => {
 
       if (response.status === 200) {
         alert('Registration successful!');
+        Router.push(`Students/Login`)
       } else {
         alert(`Error: ${response.data.message || 'An error occurred'}`);
       }
     } catch (error) {
       console.error('Error registering:', error);
-      alert('Something went wrong. Please try again.');
+      alert('Email is Already Registered.');
     }
   };
 
@@ -195,6 +156,14 @@ const StudentRegistration = () => {
             Register
           </button>
         </form>
+
+        <p className="mt-4 text-center text-sm text-gray-600">
+          Already registered?{" "}
+          <a href="/Students/Login" className="text-indigo-600 hover:text-indigo-500">
+            Sign in
+          </a>
+        </p>
+
       </div>
     </div>
   );

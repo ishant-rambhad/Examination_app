@@ -26,7 +26,7 @@ export default function Login() {
         const { full_name } = result.data;
         alert('Login successful!');
         // Redirect to dynamic route
-        router.push(`/Students/${encodeURIComponent(full_name)}`);
+        router.push(`/Students/${encodeURIComponent(full_name)}/Dashboard`);
       } else {
         alert(`Error: ${result.message}`);
       }
