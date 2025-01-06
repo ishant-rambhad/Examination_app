@@ -8,6 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.marquee-container:hover .marquee-content {
+	animation-play-state: paused;
+  }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

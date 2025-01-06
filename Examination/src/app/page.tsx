@@ -4,7 +4,7 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import Header from "../components/header";	
 import Background from '../components/background';
-
+import Marquee from  '../components/Marquee';
 const App = () => {
 	return (
 		
@@ -15,6 +15,7 @@ const App = () => {
 			<Header />
 			<main className="flex-grow">
 			  <Features />
+			  <Marquee />
 			</main>
 			<Footer />
 		  </div>
