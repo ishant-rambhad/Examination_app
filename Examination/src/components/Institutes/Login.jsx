@@ -1,15 +1,31 @@
 'use client'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import axios from 'axios'
 
 export default function Login() {
   const [formData, setFormData] = useState({
-    email: '',
+    username: '',
     password: ''
   })
+  const [error, setError] = useState(null)
+  const router = useRouter()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle login logic here
+    try {
+      const response = await axios.post('http://localhost:8000/api/institutes/login/', formData)
+      
+      if (response.status === 200) {
+        // Assuming the backend sends the institute name in the response
+        const instituteName = response.data.institute_name || 'default'
+        
+        // Navigate to the Dashboard with the institute name
+        router.push(`/Institutes/${instituteName}/Dashboard`)
+      }
+    } catch (err) {
+      setError(err.response?.data?.error || 'An unexpected error occurred.')
+    }
   }
 
   const handleChange = (e) => {
@@ -20,21 +36,22 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center ">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h1 className="text-2xl font-bold mb-6 text-center text-black">Institutes Login</h1>
+        {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-              Email
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+              Username
             </label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
               required
             />
           </div>
@@ -48,7 +65,7 @@ export default function Login() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
               required
             />
           </div>
@@ -58,9 +75,6 @@ export default function Login() {
           >
             Login
           </button>
-          <p className="text-center mt-2 text-black">
-            Already registered? <a href="http://localhost:3000/Institutes/Registration" className="text-indigo-600 hover:text-indigo-500">Sign in</a>
-          </p>
         </form>
       </div>
     </div>
