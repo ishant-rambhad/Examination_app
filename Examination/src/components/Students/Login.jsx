@@ -15,7 +15,8 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/students/login/', formData, {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+      const response = await axios.post(`${baseUrl}/api/students/login/`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -83,7 +84,7 @@ export default function Login() {
             Login
           </button>
           <p className="text-center mt-2 text-black">
-            Already registered? <a href="http://localhost:3000/Students/Registration" className="text-indigo-600 hover:text-indigo-500">Sign in</a>
+            Not registered? <a href="http://localhost:3000/Students/Registration" className="text-indigo-600 hover:text-indigo-500">Sign up</a>
           </p>
         </form>
       </div>

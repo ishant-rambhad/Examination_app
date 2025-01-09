@@ -32,7 +32,8 @@ const StudentRegistration = () => {
     }
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/students/registration/', {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; 
+      const response = await axios.post(`${baseUrl}/api/students/registration/`, {
         full_name: formData.fullName,
         email: formData.email,
         password: formData.password,
@@ -41,8 +42,8 @@ const StudentRegistration = () => {
         identity_proof_number: formData.identityProofNumber,
         course: formData.course,
         mobile_number: formData.mobileNumber
-    });
-    
+      });
+
 
       if (response.status === 200) {
         alert('Registration successful!');

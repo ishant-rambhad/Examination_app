@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Chatbot',
     'students',
     'djongo',
+    'Institutes',
 ]
 
 MIDDLEWARE = [

@@ -14,7 +14,8 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:8000/api/institutes/login/', formData)
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+      const response = await axios.post(`${baseUrl}/api/institutes/login/`, formData)
       
       if (response.status === 200) {
         // Assuming the backend sends the institute name in the response
