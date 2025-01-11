@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'Chatbot',
     'students',
-    'djongo',
     'Institutes',
 ]
 
