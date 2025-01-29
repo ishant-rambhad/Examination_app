@@ -1,7 +1,10 @@
 from django.contrib.auth import authenticate
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404
 import json
+from .models import Question
+from .forms import QuestionForm
 
 @csrf_exempt
 def login_view(request):
@@ -21,13 +24,6 @@ def login_view(request):
         except json.JSONDecodeError:
             return JsonResponse({"error": "Invalid JSON payload."}, status=400)
     return JsonResponse({"error": "Only POST requests are allowed."}, status=405)
-
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from django.shortcuts import get_object_or_404
-import json
-from .models import Question
-from .forms import QuestionForm
 
 @csrf_exempt
 def create_question(request):

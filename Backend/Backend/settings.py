@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Chatbot',
     'students',
     'Institutes',
+    "Admin_console",
 ]
 
 MIDDLEWARE = [
