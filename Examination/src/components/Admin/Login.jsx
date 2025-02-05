@@ -11,25 +11,49 @@ export default function Login() {
   const [error, setError] = useState(null)
   const router = useRouter()
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault()
+  //   try {
+  //     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL // Backend API base URL
+  //     const response = await axios.post(`${baseUrl}/api/Admin/login/`, formData)
+
+  //     if (response.status === 200) {
+  //       // Get institute name from the response, or use a default value
+  //       const instituteName = response.data.institute_name || 'default'
+
+  //       // Redirect to the Admin Dashboard
+  //       router.push(`/Admin/${instituteName}/Dashboard`)
+  //     } else {
+  //       setError('Invalid email or password.')
+  //     }
+  //   } catch (err) {
+  //     setError(err.response?.data?.error || 'An unexpected error occurred.')
+  //   }
+  // }
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL // Backend API base URL
-      const response = await axios.post(`${baseUrl}/api/Admin/login/`, formData)
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; // Backend API base URL
+      const response = await axios.post(`${baseUrl}/api/Admin/login/`, formData);
 
       if (response.status === 200) {
-        // Get institute name from the response, or use a default value
-        const instituteName = response.data.institute_name || 'default'
+        // Get institute name from the response
+        const instituteName = response.data.institute_name;
+
+        if (!instituteName) {
+          setError('Institute name not found in the response.');
+          return;
+        }
 
         // Redirect to the Admin Dashboard
-        router.push(`/Admin/${instituteName}/Dashboard`)
+        router.push(`/Admin/${instituteName}/Dashboard`);
       } else {
-        setError('Invalid email or password.')
+        setError('Invalid email or password.');
       }
     } catch (err) {
-      setError(err.response?.data?.error || 'An unexpected error occurred.')
+      setError(err.response?.data?.error || 'An unexpected error occurred.');
     }
-  }
+  };
 
   const handleChange = (e) => {
     setFormData({

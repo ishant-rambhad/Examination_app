@@ -10,7 +10,6 @@ class SubjectCategory(models.Model):
     updated_by = models.CharField(max_length=100, null=True)
 
 
-
 class Subject(models.Model):
     subject_id = models.IntegerField(unique=True)
     subject_name = models.CharField(max_length=255)
@@ -20,13 +19,26 @@ class Subject(models.Model):
     created_by = models.CharField(max_length=100, null=True)
     updated_by = models.CharField(max_length=100, null=True)
 
+# class Topic(models.Model):
+#     topic_id = models.IntegerField(unique=True)
+#     topic_name = models.CharField(max_length=255)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+#     created_by = models.CharField(max_length=100, null=True)
+#     updated_by = models.CharField(max_length=100, null=True)
+
+
 class Topic(models.Model):
-    topic_id = models.IntegerField(unique=True)
+    topic_id = models.AutoField(primary_key=True)
     topic_name = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    created_by = models.CharField(max_length=100, null=True)
-    updated_by = models.CharField(max_length=100, null=True)
+    created_by = models.CharField(max_length=100, null=True, blank=True)
+    updated_by = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return self.topic_name
+
 
 class Question(models.Model):
     topic_id = models.IntegerField()

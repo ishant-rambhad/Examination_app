@@ -38,6 +38,7 @@ class TopicForm(forms.ModelForm):
         }
 
 
+
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
@@ -52,3 +53,4 @@ class QuestionForm(forms.ModelForm):
             'created_by': forms.TextInput(attrs={'placeholder': 'Created by'}),
             'updated_by': forms.TextInput(attrs={'placeholder': 'Updated by'}),
         }
+        
